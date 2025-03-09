@@ -3,4 +3,4 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 df = pd.read_csv('Required Datasets\\Iris_Datasets.csv')
-print(df.head())
+print(df.describe())
