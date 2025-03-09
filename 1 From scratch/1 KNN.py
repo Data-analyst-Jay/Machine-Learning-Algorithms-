@@ -2,5 +2,5 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('Required Datasets\Iris Datasets.csv')
+df = pd.read_csv('Required Datasets\\Iris_Datasets.csv')
 print(df.head())
