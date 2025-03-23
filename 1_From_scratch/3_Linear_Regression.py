@@ -1,5 +1,9 @@
-class MeraLR:
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 
+class MeraLR:
     def __init__(self):
         self.m = None
         self.b = None
@@ -16,11 +20,7 @@ class MeraLR:
 
         self.m = num/den
         self.b = y_train.mean() - (self.m * X_train.mean())
-        print(self.m)
-        print(self.b)
 
     def predict(self,X_test):
-
-        print(X_test)
-
         return self.m * X_test + self.b
+    
