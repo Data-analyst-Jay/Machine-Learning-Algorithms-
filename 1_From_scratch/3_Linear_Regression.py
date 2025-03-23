@@ -36,9 +36,9 @@ x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.3, random_s
 y_train = y_train.reset_index(drop=True)
 y_test = y_test.reset_index(drop=True)
 
-# sc = StandardScaler()
-# x_train = sc.fit_transform(x_train.to_frame())
-# x_test = sc.transform(x_test.to_frame())
+sc = StandardScaler()
+x_train = sc.fit_transform(x_train.to_frame())
+x_test = sc.transform(x_test.to_frame())
 
 model = LR()
 model.fit(x_train,y_train)
